@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claudia Jäger">
+    <meta name="description" content="A website for a tea shop in Kyoto">
+    <title>Gesällprov</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="loading">
+        <div class="symbol"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">お茶 & Ocha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">コンセプト<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">喫茶店</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <header>
+        <div class="animation-box">
+            <img class="img-box" src="https://i.imgur.com/OLTjRio.jpg" alt="geiko"/>
+            <div class="first">京都の喫茶店に</div>
+            <div class="second">初めての味</div>
+            <div class="third">懐かしい味</div>
+            <div class="fourth">世界を幸せにできる</div>
+            <div class="fifth">お茶 & Ocha。</div>
+        </div>
+    </header>
+    <div class="container-fluid">
+       <section class="content">
+           <div class="row">
+               <div class="col-0 col-md-2"></div>
+               <div class="col-12 col-md-8">
+                    <h1 class="h1-text underline">お茶 & Ocha</h1>
+                    <ol>
+                        <li class="list-item">1915年設立</li>
+                        <li class="list-item">〒404-0053 京都市お茶 & Ocha喫茶店2295</li>
+                        <li class="list-item">所有者: Claudia マリー Jäger</li>
+                    </ol>
+               </div>
+               <div class="col-0 col-md-2"></div>
+           </div>
+       </section>
+       <section class="content">
+           <h3 class="h3-title">.</h3>
+           <div class="row color">
+               <div class="col-0 col-md-2"></div>
+               <div class="col-12 col-md-8">
+                    <blockquote>
+                        <dl>
+                            <dt>コンセプト</dt>
+                            <dd>お茶を飲むことで新旧の思い出をもたらし、<br/>
+                            異文化の新しい友達を作り、<br/>
+                            世界を幸せできると信じている。
+                            </dd>
+                        </dl>
+                    </blockquote>
+               </div>
+               <div class="col-0 col-md-2"></div>
+           </div>
+       </section>
+       <section class="video-content">
+           <div class="overlay"></div>
+           <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted">
+               <source src="lotus.mp4" type="video/mp4">
+           </video>
+           <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-3">ハスの花</h1>
+                        <p><i>Our most recent tea blend is the one of the lotus flower. <br/>
+                        While a lovely flavor, it also helps to decrease swelling and blood sugar.<br/>
+                        You can enjoy it at our tea shop until the 25th of August 2021.</i></p>
+                        <br/>
+                        <a href="shop.html" id="shopButton">See shop</a>
+                        <p id="text"></p>
+                    </div>
+                </div>
+           </div>
+       </section>
+       <section class="content">
+           <div class="row">
+               <div class="col-0 col-md-2"></div>
+               <div class="col-12 cold-md-8">
+                    <h3 class="h3-title">© お茶 & Ocha</h3>
+                    <p class="copyright"><i>En te-hemsida som promotar deras egna fysiska butik och produkter som de har. <br/>
+                        Tanken var att använda mina japanska språkkunskaper <b>och</b> nyutvecklade HTML, CSS (och lite JS)-kunskaper på ett roligt sätt.</i><br/>
+                        Gesällprov: WPROG1 VT2021. Claudia Jäger</p>
+               </div>
+               <div class="col-0 col-md-2"></div>
+           </div>
+       </section>
+       <hr>
+       <footer class="text-center">
+           <div class="row color">
+               <div class="col-0 col-md-2"></div>
+               <div class="col-12 col-md-8">
+                    <h4>Contact:</h4>
+                    <br/>
+                    <p>お茶を飲み、落ち着く時間を。</p>
+                    <br/>
+                    <p class="underline"><a href="mailto:claudia.jager@outlook.com">contact@ochaandocha.com</a></p>
+                    <br/>
+               </div>
+               <div class="col-0 col-md-2"></div>
+           </div>
+       </footer>
+    </div>
+    <script src="Loading.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

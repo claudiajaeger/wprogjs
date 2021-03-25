@@ -1,0 +1,250 @@
+body {
+    font-family: 'Shippori Mincho B1', serif;
+    background-color: white;
+    box-sizing: border-box;
+    max-width: 1504px;
+    cursor:auto;
+}
+
+.navbar {
+    background-color: #052032b7;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+header {
+    max-width: 1486px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    z-index: 2;
+    color: black;
+    margin-left: 35rem;
+    margin-top: 14rem;
+    font-size: 4rem;
+    font-weight: 600;
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+    -moz-animation: fadeIn ease 4s;
+    -o-animation: fadeIn ease 4s;
+    -ms-animation: fadeIn ease 4s;
+}
+
+.img-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100%;
+    position: relative;
+    opacity: 0.9;
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+    -moz-animation: fadeIn ease 4s;
+    -o-animation: fadeIn ease 4s;
+    -ms-animation: fadeIn ease 4s;
+}
+
+.myImg {
+    object-fit:contain;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.mapImg {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+figcaption {
+    color: white;
+    font-size:0.8em;
+    text-align: left;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.supportText {
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-box {
+    width: 100%;
+    height: 38rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.animation-container {
+    width: 1000rem;
+    height: 30rem;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 16px 26px 0 rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.myForm {
+    padding: 1rem;
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+input[type=submit], input[type=reset] {
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 3ms;
+}
+
+input[type=submit] {
+    background-color: #052032;
+    color: white;
+}
+
+input[type=reset] {
+    background-color: rgb(50, 77, 50);
+    color: white;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    resize: none;
+}
+
+.h1-text {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: lighter;
+    line-height: 7rem;
+    letter-spacing: 0.06rem;
+}
+
+h4 {
+    margin-top: 1rem;
+}
+
+.support-title {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.content {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    position: relative;
+    text-align: center;
+}
+
+.color {
+    background-color: #052032;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.list-item {
+    list-style:circle;
+    color: white;
+    line-height: 4rem;
+}
+
+ol {
+    padding: 0;
+}
+
+blockquote {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+}
+
+dt {
+    font-size: 2rem;
+}
+
+a {
+    font-size: 1rem;
+    color: black;
+}
+
+a:hover {
+    color: #164564;
+}
+
+.h3-title {
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.copyright {
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 0.75rem;
+}
+
+#pointer{
+    cursor: pointer;
+}
+
+#number {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+footer {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    font-size: 0.9rem;
+}

@@ -1,0 +1,386 @@
+body {
+    font-family: 'Shippori Mincho B1', serif;
+    background-color: #052032;
+    box-sizing: border-box;
+    max-width: 1504px;
+    cursor:auto;
+}
+
+.loading {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background:rgb(255, 255, 255);
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+.loading .symbol {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border: 3px dotted #0675b9e5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading .symbol:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 3px dotted rgb(238, 59, 142);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar {
+    background-color: #052032b7;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+header {
+    max-width: 1504px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+.img-box {
+    width: 100%;
+    position: relative;
+    opacity: 0.9;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-box {
+    width: 100%;
+    height: 38rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.animation-container {
+    width: 1000rem;
+    height: 30rem;
+}
+
+@keyframes topFadeOut {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+    75% {
+        position: absolute;
+        top: 25%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bottomFadeOut {
+    0% {
+        position: absolute;
+        bottom: -5rem;
+        opacity: 0;
+    }
+    75% {
+        position: absolute;
+        bottom: 25%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes topFadeOutVertical {
+    0% {
+        position: absolute;
+        top: -3rem;
+        opacity: 0;
+    }
+    75% {
+        position: absolute;
+        top: 45%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rightFadeInOut {
+    0% {
+        position: absolute;
+        right: -3rem;
+        opacity: 0;
+    }
+    75% {
+        position: absolute;
+        right: 10rem;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 10rem;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.first {
+    color: white;
+    font-weight:500;
+    font-size: 4.4rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+    opacity: 0;
+    animation-name: topFadeOut;
+    animation-duration: 4s;
+}
+
+.second {
+    color: white;
+    font-weight:500;
+    font-size: 3.4rem;
+    position: absolute;
+    top: 8.5rem;
+    opacity: 0;
+    animation-name: rightFadeInOut;
+    animation-delay: 3s;
+    animation-duration: 5s;
+}
+
+.third {
+    color: white;
+    font-weight:500;
+    writing-mode: vertical-rl;
+    text-orientation: inherit;
+    font-size: 2rem;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    opacity: 0;
+    animation-name: topFadeOutVertical;
+    animation-delay: 7.5s;
+    animation-duration: 5s;
+    white-space: nowrap;
+}
+
+.fourth {
+    color: white;
+    font-weight:500;
+    font-size: 3.4rem;
+    position: absolute;
+    top: 10.5rem;
+    left: 10%;
+    opacity: 0;
+    animation-name: fadeInOut;
+    animation-delay: 8.5s;
+    animation-duration: 8s;
+}
+
+.fifth {
+    color: white;
+    font-weight:500;
+    font-size: 4rem;
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    opacity: 0;
+    animation-name: bottomFadeOut;
+    animation-delay: 10s;
+    animation-duration: 8s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .first, .second, .third, .fourth, .fifth {
+        display: none;
+    }
+}
+
+.h1-text {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: lighter;
+    line-height: 7rem;
+    letter-spacing: 0.06rem;
+}
+
+h4 {
+    margin-top: 1rem;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.color {
+    background-color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.list-item {
+    list-style-type: none;
+    color: white;
+    line-height: 4rem;
+}
+
+ol {
+    padding: 0;
+}
+
+blockquote {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+}
+
+dt {
+    font-size: 2rem;
+}
+
+a {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: black;
+}
+
+.video-content {
+    position: relative;
+    background-color: black;
+    height: 68vh;
+    min-height: 24rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-content video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-content .container {
+    position: relative;
+    z-index: 2;
+}
+
+.video-content .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#shopButton {
+    background-color: #00000029;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.4s;
+}
+
+#shopButton:hover {
+    background-color: rgba(219, 179, 199, 0.699);
+    color: black;
+    border: 1px solid black;
+    
+}
+
+.h3-title {
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.copyright {
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 0.75rem;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    font-size: 0.9rem;
+    color: black;
+}
